@@ -7,7 +7,7 @@ function assert(ok, message) {
 }
 
 function isFunction(fn) {
-    return Object.prototype.toString.call(fn) === "[object Function]" && fn.constructor.name === "Function";
+    return typeof(fn) === 'function';
 }
 
 function isPlainObject(value) {
